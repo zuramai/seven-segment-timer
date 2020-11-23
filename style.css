@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans';
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #212121;
+    margin-bottom: 2rem;
+}
+.seven-segment {
+    display: flex;
+    justify-content: space-between;
+}
+.number {
+    width: calc(100%/5);
+    padding: 0 2rem;
+}
+.number .box:not(.active) {
+    border-radius: .5rem;
+    background-color:red;
+    opacity: .1;
+}
+.number .box.active {
+    border-radius: .5rem;
+    background-color: rgb(250, 74, 74);
+}
+.number .box {
+    margin-bottom: .5rem;
+
+}
+.number .horizontal {
+    padding: 0 1rem;
+}
+.number .box-horizontal {
+    width: 100%;
+    height: 20px;
+}
+.number .vertical {
+    display: flex;
+    justify-content: space-between;
+}
+.number .box-vertical {
+    width: 20px;
+    height: 120px;
+}
+.separator {
+    align-self: center;
+    height: 100%;
+}
+.separator .dot {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(196, 86, 86);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.btn {
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.btn#start {
+    background-color: rgb(76, 76, 202);
+    color: #fff
+}
+.btn#stop {
+    background-color: rgb(207, 85, 85);
+    color: #fff
+}
+.btn#reset {
+    background-color: rgb(255, 200, 47);
+    color: #333
+}
